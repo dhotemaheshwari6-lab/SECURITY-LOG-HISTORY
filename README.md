@@ -1,252 +1,204 @@
-# CodeShield AI — Offline Secure Coding Assistant
+🛡️ CodeShield AI
+Scan Smarter. Code Safer. Stay Secure.
+Version
 
-## Overview
+CodeShield AI v1.0.0
+
+Final Tagline
+
+"Empowering developers with offline security intelligence."
+
+Alternative taglines:
+
+Think Secure. Code Secure.
+Your Local AI Security Analyst.
+Analyze. Detect. Protect.
+Secure Code Starts Here.
+📌 Overview
 
 CodeShield AI is a modern cybersecurity-focused secure coding assistant that performs static code analysis entirely offline. The system helps developers identify common security vulnerabilities in C, Python, and JavaScript applications without relying on external APIs, cloud services, or internet connectivity.
 
 Unlike cloud-based AI coding assistants, CodeShield AI operates locally, ensuring complete privacy, faster analysis, and zero dependency on API keys or third-party services.
 
----
+🎯 Project Objectives
+Improve secure coding practices.
+Detect common vulnerabilities automatically.
+Provide offline code analysis.
+Help students learn cybersecurity concepts.
+Encourage secure software development.
+✨ Key Features
 
-## Key Features
+✅ Fully offline operation
 
-* Fully offline operation.
-* No API keys or internet connection required.
-* Cybersecurity-themed dashboard interface.
-* Multi-language vulnerability detection.
-* Static code analysis engine.
-* Security score generation.
-* Vulnerability severity classification.
-* Scan history management.
-* Exportable HTML and Markdown reports.
-* User authentication with secure password hashing.
-* SQLite database with PostgreSQL compatibility.
+✅ No API keys required
 
----
+✅ Cybersecurity dashboard UI
 
-## Technology Stack
+✅ Multi-language scanning
 
-### Frontend
+✅ Security score generation
 
-* React.js
-* Tailwind CSS
-* Monaco Code Editor
-* Lucide React Icons
-* Vite
+✅ Vulnerability severity levels
 
-### Backend
+✅ Scan history tracking
 
-* FastAPI
-* Uvicorn
-* Pydantic
-* SQLAlchemy
+✅ HTML and Markdown reports
 
-### Database
+✅ Secure authentication
 
-* SQLite
-* PostgreSQL compatible models
+✅ Local database support
 
-### Security Technologies
-
-* PBKDF2-SHA256 password hashing
-* JWT authentication
-* Rule-based static security engine
-
----
-
-## Vulnerability Detection Engine
-
-### C Language
-
-#### Critical Severity
-
-* Buffer overflow using `gets()`
-* Command injection using `system()`
-
-#### High Severity
-
-* Unsafe `strcpy()`
-* Unsafe `strcat()`
-* Unbounded `sprintf()`
-
-#### Medium Severity
-
-* Memory leaks from `malloc()` and `calloc()`
-
-#### Low Severity
-
-* Missing validation of command-line arguments
-
----
-
-### Python
-
-#### Critical Severity
-
-* SQL injection through dynamic queries
-* Remote code execution using `eval()`
-* Remote code execution using `exec()`
-* Command injection using `os.system()`
-* Insecure subprocess execution with `shell=True`
-
-#### High Severity
-
-* Hardcoded passwords
-* API keys
-* AWS credentials
-* Secret tokens
-
-#### Medium Severity
-
-* Weak hashing algorithms:
-
-  * MD5
-  * SHA-1
-
----
-
-### JavaScript
-
-#### Critical Severity
-
-* Use of `eval()`
-* SQL injection in Node.js applications
-
-#### High Severity
-
-* Cross-site scripting through:
-
-  * `innerHTML`
-  * `document.write()`
-  * `dangerouslySetInnerHTML`
-* Hardcoded secrets
-
----
-
-## Project Architecture
-
+🛠 Technology Stack
+Frontend
+React.js
+Tailwind CSS
+Monaco Editor
+Lucide Icons
+Vite
+Backend
+FastAPI
+Uvicorn
+Pydantic
+SQLAlchemy
+Database
+SQLite
+PostgreSQL Compatible
+Security
+JWT Authentication
+PBKDF2-SHA256
+Static Security Engine
+🔍 Supported Languages
+Language	Supported
+C	✅
+Python	✅
+JavaScript	✅
+🚨 Vulnerability Detection
+C Language
+gets()
+strcpy()
+strcat()
+sprintf()
+system()
+Memory leaks
+argc validation
+Python
+SQL Injection
+eval()
+exec()
+os.system()
+subprocess(shell=True)
+Hardcoded secrets
+MD5
+SHA1
+JavaScript
+eval()
+SQL Injection
+innerHTML
+document.write()
+dangerouslySetInnerHTML
+Hardcoded secrets
+📂 Project Architecture
 capstonproject1/
-
+│
 ├── backend/
-
 │   ├── app/
-
-│   │   ├── config.py
-
-│   │   ├── database.py
-
-│   │   ├── models.py
-
-│   │   ├── schemas.py
-
-│   │   ├── security.py
-
-│   │   ├── local_analyzer.py
-
-│   │   ├── main.py
-
-│   │   └── seed_data.py
-
 │   ├── requirements.txt
-
 │   └── run.bat
-
 │
-
 ├── frontend/
-
 │   ├── src/
-
-│   │   ├── components/
-
-│   │   ├── contexts/
-
-│   │   ├── pages/
-
-│   │   ├── utils/
-
-│   │   ├── App.jsx
-
-│   │   └── index.css
-
 │   ├── tailwind.config.js
-
-│   ├── postcss.config.js
-
 │   └── run.bat
-
 │
-
 └── README.md
-
----
-
-## Default Login Credentials
+🔐 Default Login
 
 Email:
-[tester@codeshield.ai](mailto:tester@codeshield.ai)
+tester@codeshield.ai
 
 Password:
 password123
 
-New users may also register through the login page.
-
----
-
-## Running the Application
-
-### Backend
-
-```bash
+⚙️ Installation
+Backend
 cd backend
 run.bat
-```
 
 Server:
 http://127.0.0.1:8000
 
-### Frontend
-
-```bash
+Frontend
 cd frontend
 run.bat
-```
 
 Application:
 http://localhost:3000
 
----
+📊 Report Generation
 
-## Report Generation
+Supported export formats:
 
-Users can export security analysis reports in:
+HTML Report
+Markdown Report
 
-* HTML format
-* Markdown format
+Report includes:
 
-Reports include:
+Security Score
+Vulnerability Details
+Severity Levels
+Suggested Fixes
+Secure Coding Tips
+🏆 Future Enhancements
+Java support
+OWASP Top 10 scanner
+PDF reports
+AI code suggestions
+Docker deployment
+CI/CD integration
+Git repository scanning
+VS Code extension
+Real-time scanning
+Team collaboration dashboard
+📷 Screenshots
 
-* Security score
-* Vulnerability severity
-* Vulnerability descriptions
-* Recommended fixes
-* Secure coding suggestions
+Add screenshots here:
 
----
+Login Page
+Dashboard
+Code Editor
+Scan Results
+Security Reports
+👨‍💻 Author
 
-## Future Enhancements
+Maheshwari Dhote
 
-* Support for Java language analysis.
-* OWASP Top 10 detection engine.
-* PDF report generation.
-* AI-based code recommendations.
-* Docker deployment.
-* Role-based user management.
-* CI/CD integration.
-* Git repository scanning.
+Cybersecurity Enthusiast | C Programmer | Secure Software Developer
 
----
+🎓 Academic Project
 
-## Conclusion
+This project was developed as a cybersecurity and secure coding capstone project to demonstrate static analysis, vulnerability detection, and secure development practices.
 
-CodeShield AI demonstrates how secure code analysis can be performed completely offline while maintaining usability, speed, and developer privacy. The project combines cybersecurity concepts, secure coding practices, and modern web technologies to create a practical secure coding assistant suitable for academic and real-world environments.
+📜 License
+
+MIT License
+
+Copyright (c) 2026 Maheshwari Dhote
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
+
+🙏 Acknowledgements
+
+Special thanks to:
+
+Open-source community
+FastAPI developers
+React developers
+Cybersecurity learning resources
+Secure coding best practices
+⭐ Why CodeShield AI?
+
+Because secure code should not require the cloud.
+
+🚀 Final Tagline
+
+CodeShield AI — Scan Smarter. Code Safer. Stay Secure.
