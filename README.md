@@ -21,6 +21,10 @@ CodeShield AI is a modern cybersecurity-focused secure coding assistant that per
 Unlike cloud-based AI coding assistants, CodeShield AI operates locally, ensuring complete privacy, faster analysis, and zero dependency on API keys or third-party services.
 
 <img width="1897" height="891" alt="Image" src="https://github.com/user-attachments/assets/c56f0265-8a87-41fc-9e59-985ea79a2b7d" />
+<img width="1527" height="633" alt="Image" src="https://github.com/user-attachments/assets/3edc8d66-2d97-4cba-8f2b-0faa826bfd85" />
+
+<img width="1542" height="525" alt="Image" src="https://github.com/user-attachments/assets/97fa5d06-a8a3-42da-9aed-fd6b09ce9544" />
+
 
 🎯 Project Objectives
 Improve secure coding practices.
